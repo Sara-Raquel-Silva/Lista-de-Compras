@@ -1,0 +1,101 @@
+h1 {
+  text-align: center;
+  color: #f9e912;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-item {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(186, 180, 15, 0.244);
+}
+
+/*Icones*/
+i.ph {
+  font-size: 24px;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+i.ph {
+  font-size: 30px;
+  color: #000;
+}
+/*Icones*/
+
+.list-section {
+  margin-top: 20px;
+}
+
+h3 {
+  color: #f9e912;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+/*organizando os itens*/
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #f9e91276;
+}
+
+span {
+  flex: 1;
+  padding: 0 10px;
+}
+
+/*botões*/
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 55px;
+  background-color: #eaea0a00;
+  cursor: pointer;
+}
+
+.test {
+  font-size: 24px;
+  color: #000;
+  background-color: #ea0a0a00;
+  transition: color 0.3s ease;
+}
+button {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+button:disabled {
+  background-color: #f9e912;
+  cursor: not-allowed;
+}
+/*botões*/
+
+.comprados span {
+  text-decoration: line-through;
+  color: #f9e912;
+}
+
+/*FOOTER*/
+.footer {
+  color: rgb(0, 0, 0); /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  padding: 20px; /* Espaçamento interno */
+}
+
+.footer span {
+  color: #8034cb; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+}

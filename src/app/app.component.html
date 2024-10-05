@@ -1,0 +1,54 @@
+<div class="lista-compras-container">
+  <h1><i class="ph1 ph-clipboard-text"></i> Lista de Compras</h1>
+
+  <form (ngSubmit)="addItem()" [formGroup]="itemForm">
+    <input
+      type="text"
+      formControlName="itemName"
+      placeholder="Adicione um item"
+      class="input-item"
+    />
+    <button type="submit" [disabled]="itemForm.invalid">
+      {{ EItem ? "Salvar" : "Adicionar" }}
+    </button>
+  </form>
+
+  <div class="list-section">
+    <h3>Para Comprar <i class="ph1 ph-shopping-cart"></i></h3>
+    <ul>
+      <li *ngFor="let item of itensNaoComprados" class="Ncomprados">
+        <button class="test" (click)="changeItemStatus(item)">
+          <i class="ph ph-square"></i>
+        </button>
+        <span>{{ item.nome }}</span>
+        <button (click)="CmcEItem(item)">
+          <i class="ph ph-pencil-circle"></i>
+        </button>
+        <button (click)="removeItem(item)">
+          <i class="ph ph-backspace"></i>
+        </button>
+      </li>
+    </ul>
+
+    <h3>Comprados <i class="ph1 ph-credit-card"></i></h3>
+    <ul>
+      <li *ngFor="let item of itensComprados" class="comprados">
+        <button (click)="changeItemStatus(item)">
+          <i class="ph ph-check-square"></i>
+        </button>
+        <span>{{ item.nome }}</span>
+        <button (click)="removeItem(item)">
+          <i class="ph ph-backspace"></i>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <footer class="footer">
+    <p>
+      Desenvolvido por
+      <span
+        ><em><i>Sara Raquel</i></em></span
+      >
+    </p>
+  </footer>
+</div>
