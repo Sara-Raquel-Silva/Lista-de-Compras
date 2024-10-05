@@ -90,12 +90,12 @@ button:disabled {
 
 /*FOOTER*/
 .footer {
-  color: rgb(0, 0, 0); /* Cor do texto */
-  text-align: center; /* Centraliza o texto */
-  padding: 20px; /* Espaçamento interno */
+  color: rgb(0, 0, 0); 
+  text-align: center; 
+  padding: 20px; 
 }
 
 .footer span {
-  color: #8034cb; /* Cor do texto */
-  text-decoration: none; /* Remove o sublinhado */
+  color: #8034cb; 
+  text-decoration: none; 
 }
